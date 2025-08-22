@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white text-center py-12">
       <h2 className="text-2xl font-serif font-bold mb-4">Lokasi Kami</h2>
-      <p className="mb-6 text-gray-300">Jl. Margonda Raya No.123, Depok</p>
+      <p className="mb-6 text-gray-300">Jl. Pitara, Rangkapan Jaya, Boing 32, Depok</p>
 
       <form className="flex justify-center space-x-3">
         <input
