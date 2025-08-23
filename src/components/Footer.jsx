@@ -4,7 +4,7 @@ function Footer() {
       <h2 className="text-2xl font-serif font-bold mb-4">Lokasi Kami</h2>
       <p className="mb-6 text-gray-300">Jl. Pitara, Rangkapan Jaya, Boing 32, Depok</p>
 
-      <form className="flex justify-center space-x-3">
+      <form className="flex justify-center space-x-3">  
         <input
           type="text"
           placeholder="Masukkan lokasi Anda"
