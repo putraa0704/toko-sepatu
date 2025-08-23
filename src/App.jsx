@@ -5,6 +5,7 @@ import Brand from "./components/Brand";
 import Search from "./components/Search";
 import Footer from "./components/Footer";
 import Pembelian from "./pages/Pembelian";
+import AllProducts from "./pages/AllProducts";
 
 function App() {
   return (
@@ -23,10 +24,12 @@ function App() {
             }
           />
           <Route path="/pembelian/:brand" element={<Pembelian />} />
+          <Route path="/products" element={<AllProducts />} />
         </Routes>
         <Footer />
       </div>
     </BrowserRouter>
   );
 }
+
 export default App;
