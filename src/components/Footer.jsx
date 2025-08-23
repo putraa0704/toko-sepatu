@@ -1,4 +1,4 @@
-export default function Footer() {
+function Footer() {
   return (
     <footer className="bg-gray-900 text-white text-center py-12">
       <h2 className="text-2xl font-serif font-bold mb-4">Lokasi Kami</h2>
@@ -21,3 +21,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

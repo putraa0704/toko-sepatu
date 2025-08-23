@@ -1,4 +1,4 @@
-export default function Search() {
+function Search() {
   return (
     <section id="search" className="py-20 bg-neutral-50 text-center">
       <h2 className="text-3xl font-serif font-bold mb-6 text-gray-900">
@@ -12,3 +12,5 @@ export default function Search() {
     </section>
   );
 }
+
+export default Search;

@@ -1,4 +1,4 @@
-export default function Home() {
+function Home() {
   return (
     <section id="home" className="bg-neutral-50 py-24 text-center">
       <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
@@ -14,3 +14,5 @@ export default function Home() {
     </section>
   );
 }
+
+export default Home;
