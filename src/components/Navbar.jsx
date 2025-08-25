@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,22 +36,22 @@ function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-x-10 font-sans text-gray-700">
           <li>
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="hover:text-emerald-600 transition-colors relative group"
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-600 transition-all group-hover:w-full"></span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#brand"
+            <Link
+              to="/"
               className="hover:text-emerald-600 transition-colors relative group"
             >
               Brand
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-600 transition-all group-hover:w-full"></span>
-            </a>
+            </Link>
           </li>
           <li>
             <a

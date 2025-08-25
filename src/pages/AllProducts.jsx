@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function AllProducts() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("all");
 
   const products = {
@@ -81,13 +83,15 @@ function AllProducts() {
         id: 2,
         name: "Vans Authentic",
         price: "899.000",
-        image: "https://i.pinimg.com/1200x/6f/48/d0/6f48d0112681206c13c0ac50e8e65ac1.jpg",
+        image:
+          "https://i.pinimg.com/1200x/6f/48/d0/6f48d0112681206c13c0ac50e8e65ac1.jpg",
       },
       {
         id: 3,
         name: "Vans Sk8-Hi",
         price: "1.299.000",
-        image: "https://i.pinimg.com/1200x/7a/80/8d/7a808da40e15575b8042aabeb1ab3c75.jpg",
+        image:
+          "https://i.pinimg.com/1200x/7a/80/8d/7a808da40e15575b8042aabeb1ab3c75.jpg",
       },
     ],
     converse: [
@@ -95,19 +99,22 @@ function AllProducts() {
         id: 1,
         name: "Converse Chuck 70",
         price: "1.199.000",
-        image: "https://i.pinimg.com/736x/71/f0/db/71f0db5e25de58caabbaae9c72809bda.jpg",
+        image:
+          "https://i.pinimg.com/736x/71/f0/db/71f0db5e25de58caabbaae9c72809bda.jpg",
       },
       {
         id: 2,
         name: "Converse All Star",
         price: "899.000",
-        image: "https://i.pinimg.com/1200x/ad/12/6b/ad126bf9f0b4b67c654d77482c20b50f.jpg",
+        image:
+          "https://i.pinimg.com/1200x/ad/12/6b/ad126bf9f0b4b67c654d77482c20b50f.jpg",
       },
       {
         id: 3,
         name: "Converse One Star",
         price: "1.099.000",
-        image: "https://i.pinimg.com/736x/bc/67/59/bc675993e0e37b4211d871629ee05f97.jpg",
+        image:
+          "https://i.pinimg.com/736x/bc/67/59/bc675993e0e37b4211d871629ee05f97.jpg",
       },
     ],
   };
@@ -122,6 +129,12 @@ function AllProducts() {
   return (
     <div className="min-h-screen py-24 px-4 bg-neutral-50">
       <div className="max-w-7xl mx-auto">
+        <button
+          onClick={() => navigate(-1)}
+          className="mb-6 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300"
+        >
+          ⬅ Kembali
+        </button>
         <h1 className="text-4xl font-serif font-bold mb-8 text-center">
           Semua Koleksi
         </h1>
@@ -171,10 +184,19 @@ function AllProducts() {
                 <h2 className="text-xl font-bold mb-2">{product.name}</h2>
                 <p className="text-gray-600 mb-4">Rp {product.price}</p>
                 <div className="flex gap-2">
-                  <button className="flex-1 bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition">
+                  <button
+                    onClick={() => navigate("/payment")}
+                    className="flex-1 bg-emerald-600 text-white py-2 rounded-lg hover:bg-emerald-700 transition"
+                  >
                     Beli Sekarang
                   </button>
-                  <button className="px-4 py-2 border border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition">
+
+                  <button
+                    onClick={() =>
+                      alert("🛠️ Fitur keranjang sedang dalam masa pengembangan")
+                    }
+                    className="px-4 py-2 border border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition"
+                  >
                     🛒
                   </button>
                 </div>

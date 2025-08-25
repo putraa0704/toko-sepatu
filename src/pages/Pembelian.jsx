@@ -115,6 +115,7 @@ function Pembelian() {
   return (
     <div className="min-h-screen py-24 px-4 bg-neutral-50">
       <div className="max-w-6xl mx-auto">
+        
         <h1 className="text-4xl font-serif font-bold mb-4 text-center">
           Koleksi {brand}
         </h1>
